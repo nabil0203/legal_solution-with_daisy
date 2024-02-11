@@ -14,18 +14,18 @@
     <!-- Customize Color -->
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                'primary-color': '#B68C5A',
-                'garamond-color': '#414040',
-                'poppins-color': '#707070',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'primary-color': '#B68C5A',
+                        'garamond-color': '#414040',
+                        'poppins-color': '#707070',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,13 +45,13 @@
 </head>
 
 <body>
-    <nav class="container mx-auto flex justify-between items-center my-10">
+    <nav class="container mx-auto lg:flex justify-between items-center my-10">
         <div class="flex items-center gap-6">
             <img src="images/business.png" alt="">
             <h2 class="font-garamond text-5xl text-garamond-color">Justice</h2>
         </div>
         <div>
-            <ul class="text-2xl flex gap-16 text-poppins-color">
+            <ul class="text-2xl lg:flex gap-16 text-poppins-color">
                 <li>Home</li>
                 <li>Services<i class="fa-solid fa-chevron-right"></i></li>
                 <li>Cases<i class="fa-solid fa-chevron-right"></i></li>
@@ -59,8 +59,23 @@
                 <li>Contact Us<i class="fa-solid fa-chevron-right"></i></li>
             </ul>
         </div>
-        <button class="btn-lg rounded-lg bg-primary-color text-white text-xl">Free Consultation</button>
+        <div>
+            <button class="btn-lg rounded-lg bg-primary-color text-white text-xl font-semibold">Free
+                Consultation</button>
+        </div>
     </nav>
+    <header class="container mx-auto bg-[url('images/banner.png')] h-screen bg-no-repeat text-white text-center">
+        <div class="space-y-6">
+            <h2 class="font-garamond text-7xl">We Provide Effective <br>Legal Solutions</h2>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have <br>suffered
+                alteration in some form, by injected humour.</p>
+            <div class="flex items-center justify-center gap-3">
+                <input type="text" placeholder="Search your services" class="input w-full max-w-xl" />
+                <button
+                    class="btn rounded-lg bg-primary-color text-white text-xl font-semibold border-none">Search</button>
+            </div>
+        </div>
+    </header>
 </body>
 
 </html>
